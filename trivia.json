@@ -1,0 +1,64 @@
+{"questions":
+  [
+    {
+      "question": "What was used to provide protection for the soldiers on the front lines?",
+      "hint": "What ran along the western front?",
+      "answers": ["Trenches", "Tanks", "Field Telephone", "Machine Gun"],
+      "explanation": "Trenches were a huge part of WWI, given that most of WWI was spent in a trench!"
+    },
+    {
+      "question": "What weapon was used to provide protection as well as mobile firepower?",
+      "hint": "Was used to break stalemates",
+      "answers": ["Tanks", "Aircraft", "Artillery", "Battleship"],
+      "explanation": "Tanks were used to break stalemates later on in the war and provided mobile firepower along with protection. TL;DR: Tanks were basically big cars with a gun on the front."
+    },
+    {
+      "question": "What emerging technology was used to bomb the enemy from above?",
+      "hint": "Above means in the air.",
+      "answers": ["Aircraft", "Artillery", "Mustard Gas", "Flamethrower"],
+      "explanation": "In World War I, aircraft were first used to bomb the enemy from above, and were later used in \"dogfights\"."
+    },
+    {
+      "question": "What technology aided in fast communication?",
+      "hint": "The precursor to something that almost everyone has nowadays.",
+      "answers": ["Field Telephone", ""],
+      "explanation": "Telephone makes fast communication. Simple as that."
+    },
+    {
+      "question": "What technology did the Germans first use that needed 2+ men to operate?",
+      "hint": "This weapon went brrrrr.",
+      "answers": ["Machine Gun", "Tanks", "Flamethrower", "Submarine"],
+      "explanation": "The Germans first used the machine gun. It needed 2+ people to operate, one to aim and fire, the other to feed the gun bullets."
+    },
+    {
+      "question": "What very controversial weapon was used by both sides, although more often used by the Germans?",
+      "hint": "Something that needed gas masks.",
+      "answers": ["Mustard Gas", "Flamethrower", "Field Telephone", "Trench"],
+      "explanation": "Mustard gas was a controversial weapon even during WWI, and the troops that were attacked with it needed gas masks to survive. It was usually noticed when it was too late."
+    },
+    {
+      "question": "What weapon could kill in an instant and caused most WWI deaths?",
+      "hint": "This looked like a huge canon.",
+      "answers": ["Artillery", "Submarine", "Mustard Gas", "Flamethrower"],
+      "explanation": "Artillery caused 60% of all WWI deaths. It was a commonly used weapon against trenches because the weapon could kill from above."
+    },
+    {
+      "question": "What wepon was used by the Germans to rival the British Navy?",
+      "hint": "Glub glub",
+      "answers": ["Submarine", "Battleship", "Flamethrower", "Tanks"],
+      "explanation": "Submarines/u-boats were used by the Germans to sink civillian ships (like the Lusitania). It was developed to rival the British Navy."
+    },
+    {
+      "question": "What massive weapon was used in Navies?",
+      "hint": "Seen as the \"King of the Seas\" during WWI.",
+      "answers": ["Battleships", "Submarines", "Artillery", "Trenches"],
+      "explanation": "Battleships were huge, defended ships used in battle in the seas."
+    },
+    {
+      "question": "What weapon looked super cool and was used to clear out trenches? This weapon also had a short range.",
+      "hint": "Was very hot.",
+      "answers": ["Flamethrower", "Artillery", "Machine Gun", "Field Telephone"],
+      "explanation": "Flamethrowers had a short range (around 20 feet) and were used to clear out trenches because, fun fact, people don't like fire. When not used to kill people, flamethrowers look pretty cool."
+    }
+  ]
+}
