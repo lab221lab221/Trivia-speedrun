@@ -1,7 +1,7 @@
 {"questions":
   [
     {
-      "question": "What was used to provide protection for the soldiers on the front lines?",
+      "question": "What was used as the primary source of protection for the soldiers on the front lines?",
       "hint": "What ran along the western front?",
       "answers": ["Trenches", "Tanks", "Field Telephone", "Machine Gun"],
       "explanation": "Trenches were a huge part of WWI, given that most of WWI was spent in a trench!"
@@ -21,7 +21,7 @@
     {
       "question": "What technology aided in fast communication?",
       "hint": "The precursor to something that almost everyone has nowadays.",
-      "answers": ["Field Telephone", ""],
+      "answers": ["Field Telephone", "Tanks", "Machine Guns", "Aircraft"],
       "explanation": "Telephone makes fast communication. Simple as that."
     },
     {
@@ -43,7 +43,7 @@
       "explanation": "Artillery caused 60% of all WWI deaths. It was a commonly used weapon against trenches because the weapon could kill from above."
     },
     {
-      "question": "What wepon was used by the Germans to rival the British Navy?",
+      "question": "What weapon was used by the Germans to rival the British Navy?",
       "hint": "Glub glub",
       "answers": ["Submarine", "Battleship", "Flamethrower", "Tanks"],
       "explanation": "Submarines/u-boats were used by the Germans to sink civillian ships (like the Lusitania). It was developed to rival the British Navy."
