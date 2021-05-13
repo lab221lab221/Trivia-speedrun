@@ -1,0 +1,127 @@
+body {
+  background-color: black;
+}
+#title {
+  cursor: default;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  margin: 50px;
+  font-family: monospace;
+}
+#description {
+  cursor: default;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin: 50px;
+  font-family: monospace;
+}
+#onwards {
+  cursor: pointer;
+  margin-top: 15%;
+  display: block;
+  font-size: 30px;
+  border-radius: 40px;
+  font-family: monospace;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 0px;
+  background-color: black;
+  color: white;
+}
+#onwards:hover {
+  background-color: white;
+  color: black;
+  transition: 1000ms;
+}
+#question {
+  cursor: default;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+  font-family: monospace;
+}
+#hint_butt_hehe {
+  width: 49%
+  margin-top: 1%;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 5px;
+  font-family: monospace;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 0px;
+  background-color: black;
+  color: white;
+  transition: 1000ms;
+  cursor: pointer;
+}
+#hint_butt_hehe:hover {
+  background-color: white;
+  color: black;
+  transition: 1000ms;
+}
+#hint {
+  display: inline-block;
+  cursor: default;
+  width: 50%;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 1%;
+  font-family: monospace;
+}
+.answer {
+  cursor: pointer;
+  margin-top: 5%;
+  text-align: center;
+  width: 24%;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 40px;
+  font-family: monospace;
+/*  margin-left: auto;
+  margin-right: auto;*/
+  border-width: 0px;
+  background-color: black;
+  color: white;
+  transition: 1000ms;
+}
+.answer:hover {
+  background-color: white;
+  color: black;
+  transition: 1000ms;
+}
+#score {
+  text-align: center;
+  width: 49%;
+  margin-top: 1%;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 5px;
+  font-family: monospace;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 0px;
+  background-color: black;
+  color: white;
+  cursor: default;
+}
+#result {
+  height: 0%;
+  width: 0%;
+  position: absolute;
+}
+#explain {
+  cursor: default;
+  width: 80%;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  margin-top: 20%;
+  font-family: monospace;
+}
