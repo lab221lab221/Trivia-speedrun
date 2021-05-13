@@ -71,6 +71,7 @@
 
         return array;
       }
+      var hint = document.getElementById("hint");
       var trivia = document.getElementById("trivia");
       var result = document.getElementById("result");
       var explain = document.getElementById("explain");
@@ -100,7 +101,8 @@
         result.style.height = "0%";
         result.style.width = "0%";
         result.style.backgroundColor = "";
-        explain.innerHTML = ""
+        explain.innerHTML = "";
+        hint.innerHTML = "<button type=\"button\" name=\"button\" id=\"hint_butt_hehe\" onclick=\"change()\">Do you need help?</button>";
         questions.open("GET", "http://192.168.1.238:8080/questions", false);
         questions.send();
         info = JSON.parse(questions.response);
@@ -116,7 +118,6 @@
         point = 100;
       }
       function change() {
-        hint = document.getElementById("hint");
         hint.innerHTML = info.hint;
         point = 50;
       }
