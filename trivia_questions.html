@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Trivia</title>
+    <link rel="stylesheet" href="trivia.css">
+    <script type="text/javascript">
+      var time = new Date();
+      var current = time.getTime();
+      var least = time.setHours(6);
+      var most = time.setHours(18);
+      var title = (document.getElementsByTagName("title"))[0];
+      if (current < most && current > least) {
+        title.innerHTML += " Daytime Edition!"
+      } else {
+        title.innerHTML += " Nighttime Edition!"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="trivia">
+      <p id="question">
+
+      </p>
+      <div id="toolbar">
+        <p id="hint">
+          <button type="button" name="button" id="hint_butt_hehe" onclick="change()">
+            Do you need help?
+          </button>
+        </p>
+        <p id="score">
+          0
+        </p>
+      </div>
+      <div id="answers">
+        <button type="button" name="button" onclick="checkz()" id="a0" class="answer">
+
+        </button>
+        <button type="button" name="button" onclick="checko()" id="a1" class="answer">
+
+        </button>
+        <button type="button" name="button" onclick="checkt()" id="a2" class="answer">
+
+        </button>
+        <button type="button" name="button" onclick="checkth()" id="a3" class="answer">
+
+        </button>
+      </div>
+    </div>
+    <div id="result">
+      <p id="explain">
+
+      </p>
+    </div>
+    <script>
+      function shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+          // Pick a remaining element...
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+
+          // And swap it with the current element.
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+      }
+      var trivia = document.getElementById("trivia");
+      var result = document.getElementById("result");
+      var explain = document.getElementById("explain");
+      var score = document.getElementById("score");
+      var questions = new XMLHttpRequest();
+      var info;
+      var quest;
+      var correct;
+      var answers;
+      var point;
+      questions.open("GET", "http://192.168.1.238:8080/questions", false);
+      questions.send();
+      info = JSON.parse(questions.response);
+      console.log(info);
+      quest = document.getElementById("question");
+      quest.innerHTML = info.question;
+      correct = info.answers[0];
+      answers = shuffle(info.answers);
+      for (var i = 0; i < answers.length; i++) {
+        answer = document.getElementById("a"+i.toString());
+        answer.innerHTML = answers[i];
+      }
+      point = 100;
+      function reload() {
+        trivia.style.display = "block";
+        result.style.display = "none";
+        result.style.height = "0%";
+        result.style.width = "0%";
+        result.style.backgroundColor = "";
+        explain.innerHTML = ""
+        questions.open("GET", "http://192.168.1.238:8080/questions", false);
+        questions.send();
+        info = JSON.parse(questions.response);
+        console.log(info);
+        quest = document.getElementById("question");
+        quest.innerHTML = info.question;
+        correct = info.answers[0];
+        answers = shuffle(info.answers);
+        for (var i = 0; i < answers.length; i++) {
+          answer = document.getElementById("a"+i.toString());
+          answer.innerHTML = answers[i];
+        }
+        point = 100;
+      }
+      function change() {
+        hint = document.getElementById("hint");
+        hint.innerHTML = info.hint;
+        point = 50;
+      }
+      var good;
+      function checkz() {
+        var answer = document.getElementById("a0");
+        if (correct == answer.innerHTML) {
+          good = true;
+          score.innerHTML = (parseInt(score.innerHTML) + point).toString();
+          trivia.style.display = "none";
+          result.style.display = "block";
+          result.style.height = "98%";
+          result.style.width = "99%";
+          result.style.backgroundColor = "green";
+          explain.innerHTML = "Good Job!";
+          setTimeout(() => {  reload(); }, 2000);
+        } else {
+          trivia.style.display = "none";
+          result.style.display = "block";
+          result.style.height = "98%";
+          result.style.width = "99%";
+          result.style.backgroundColor = "red";
+          explain.innerHTML = info.explanation;
+          setTimeout(() => {  reload(); }, 5000);
+        }
+      }
+      function checko() {
+        var answer = document.getElementById("a1");
+        if (correct == answer.innerHTML) {
+          good = true;
+          score.innerHTML = (parseInt(score.innerHTML) + point).toString();
+          trivia.style.display = "none";
+          result.style.display = "block";
+          result.style.height = "98%";
+          result.style.width = "99%";
+          result.style.backgroundColor = "green";
+          explain.innerHTML = "Good Job!";
+          setTimeout(() => {  reload(); }, 2000);
+        } else {
+          trivia.style.display = "none";
+          result.style.display = "block";
+          result.style.height = "98%";
+          result.style.width = "99%";
+          result.style.backgroundColor = "red";
+          explain.innerHTML = info.explanation;
+          setTimeout(() => {  reload(); }, 5000);
+        }
+      }
+      function checkt() {
+        var answer = document.getElementById("a2");
+        if (correct == answer.innerHTML) {
+          good = true;
+          score.innerHTML = (parseInt(score.innerHTML) + point).toString();
+          trivia.style.display = "none";
+          result.style.display = "block";
+          result.style.height = "98%";
+          result.style.width = "99%";
+          result.style.backgroundColor = "green";
+          explain.innerHTML = "Good Job!";
+          setTimeout(() => {  reload(); }, 2000);
+        } else {
+          trivia.style.display = "none";
+          result.style.display = "block";
+          result.style.height = "98%";
+          result.style.width = "99%";
+          result.style.backgroundColor = "red";
+          explain.innerHTML = info.explanation;
+          setTimeout(() => {  reload(); }, 5000);
+        }
+      }
+      function checkth() {
+        var answer = document.getElementById("a3");
+        if (correct == answer.innerHTML) {
+          good = true;
+          score.innerHTML = (parseInt(score.innerHTML) + point).toString();
+          trivia.style.display = "none";
+          result.style.display = "block";
+          result.style.height = "98%";
+          result.style.width = "99%";
+          result.style.backgroundColor = "green";
+          explain.innerHTML = "Good Job!";
+          setTimeout(() => {  reload(); }, 2000);
+        } else {
+          trivia.style.display = "none";
+          result.style.display = "block";
+          result.style.height = "98%";
+          result.style.width = "99%";
+          result.style.backgroundColor = "red";
+          explain.innerHTML = info.explanation;
+          setTimeout(() => {  reload(); }, 5000);
+        }
+      }
+    </script>
+  </body>
+</html>
