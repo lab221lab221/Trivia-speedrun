@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Trivia</title>
+    <link rel="stylesheet" href="trivia.css">
+    <script type="text/javascript">
+      var time = new Date();
+      var current = time.getTime();
+      var least = time.setHours(6);
+      var most = time.setHours(18);
+      var title = (document.getElementsByTagName("title"))[0];
+      if (current < most && current > least) {
+        title.innerHTML += " Daytime Edition!"
+      } else {
+        title.innerHTML += " Nighttime Edition!"
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <p id="title">
+        Welcome to WWI Trivia!
+      </p>
+      <p id="description">
+        Are you ready to begin?
+      </p>
+      <button type="button" name="button" onclick="change()" id="onwards">
+        Let's go!
+      </button>
+    </div>
+    <script>
+      function change(){
+        window.location.href = "http://192.168.1.238:8080/trivia_questions";
+      }
+    </script>
+  </body>
+</html>
