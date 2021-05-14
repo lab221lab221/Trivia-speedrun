@@ -59,6 +59,18 @@
       "hint": "Was very hot.",
       "answers": ["Flamethrower", "Artillery", "Machine Gun", "Field Telephone"],
       "explanation": "Flamethrowers had a short range (around 20 feet) and were used to clear out trenches because, fun fact, people don't like fire. When not used to kill people, flamethrowers look pretty cool."
+    },
+    {
+      "question": "What weapon was first used to defuse bombs and landmines?",
+      "hint": "Was pretty big.",
+      "answers": ["Tanks", "Flamethrowers", "Field Telephones", "Submarines"],
+      "explanation": "Tanks were first developed and used to clear land mines, and later used for offensive tactics."
+    },
+    {
+      "question": "What issues were there in trenches?",
+      "hint": "There were quite a few.",
+      "answers": ["All Of The Above", "Rats", "Poor Sanitation", "Filled With Water"],
+      "explanation": "Trenches were a bad place to be because of the rats, sanitation, and flooding along with the fact that the trenches were targeted with artillery."
     }
   ]
 }
